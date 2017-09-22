@@ -16,7 +16,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AUW-D9-UeR">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="AUW-D9-UeR" secondAttribute="bottom" id="30L-yM-GHz"/>
+                            <constraint firstItem="AUW-D9-UeR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="H9l-IW-qjK"/>
+                            <constraint firstItem="AUW-D9-UeR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="di2-7r-jVK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AUW-D9-UeR" secondAttribute="trailing" id="yYr-41-ZA5"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="0DK-if-NzP">
@@ -33,6 +45,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="syncButton" destination="ROC-Lt-qfI" id="0Vb-ib-7NG"/>
+                        <outlet property="tableView" destination="AUW-D9-UeR" id="xxc-Q5-f3R"/>
                         <outlet property="updateButton" destination="Q6Y-tF-hXh" id="igX-K1-ehg"/>
                     </connections>
                 </viewController>
